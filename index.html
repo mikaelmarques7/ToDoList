@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Lista de Tarefas</h1>
+        </div>
+
+        <div class="theme-toggle" id="themeToggle">
+            <i class="fas fa-sun" id="light-mode" style="display: none;"></i>
+            <i class="fas fa-moon" id="dark-mode"></i>
+        </div>
+
+
+        <div class="date-time">
+            <span id="current-date"></span>
+            <span id="current-time"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="progress-bar">
+            <div class="progress"></div>
+            <span class="progress-text">0%</span>
+        </div>
+
+        <section class="todo-section">
+            <div class="new-task">
+                <input type="text" id="task-input" placeholder="Adicione uma nova tarefa...">
+                <select id="category-select">
+                    <option value="work">
+                        Trabalho</option>
+                    <option value="personal">Pessoal</option>
+                    <option value="study">Estudos</option>
+                </select>
+                <button id="add-task-btn">Adicionar</button>
+            </div>
+
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
